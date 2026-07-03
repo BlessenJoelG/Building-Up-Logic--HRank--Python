@@ -1,7 +1,8 @@
-nums = [84,93,100,77,90]
-k = 3
-nums = sorted(set(nums),reverse = True)
-if len(nums)<k:
-    print(print(nums))
-else:
-    print(nums[0:3])
+s = "aababcabc"
+i,j,c = 0,2,0
+while(j<=len(s)-1):
+    if len(set(s[i:j+1])) == 3:
+        c += 1
+    i += 1
+    j += 1
+print(c)
